@@ -21,4 +21,4 @@ plugins: [
 
 - enable: boolean - default `true`. You should control it outside plugin
 - options: VConsoleOptions
-- entry: string | string[] - default `['src/index.ts', 'src/index.js']`. Absolute path or relative to vite config root
+- entry: string | string[] - default `['src/main.ts', 'src/main.js']`. Absolute path or relative to vite config root
