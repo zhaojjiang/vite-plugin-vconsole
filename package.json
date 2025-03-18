@@ -1,6 +1,6 @@
 {
   "name": "@zhaojjiang/vite-plugin-vconsole",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A Vite plugin to inject vconsole into your project during build.",
   "keywords": [
     "vite",
@@ -27,11 +27,10 @@
   "devDependencies": {
     "@tsconfig/node22": "^22.0.0",
     "@types/node": "^22.13.10",
-    "typescript": "^5.8.2",
-    "vite": ">=5.0.0"
+    "typescript": "^5.8.2"
   },
-  "optionalDependencies": {
-    "vconsole": ">=3.0.0"
+  "peerDependencies": {
+    "vconsole": "*"
   },
   "publishConfig": {
     "access": "public",
