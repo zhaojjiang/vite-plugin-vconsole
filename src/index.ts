@@ -31,9 +31,11 @@ export default function vitePluginVconsole(options?: PluginOptions): Plugin {
 
       if (
         !(await import(path.resolve(config.root, "package.json")))?.dependencies
-          ?.eruda
+          ?.vconsole
       ) {
-        throw new Error("[vite-plugin-eruda] need eruda to be installed.");
+        throw new Error(
+          "[vite-plugin-vconsole] need vconsole to be installed."
+        );
       }
 
       resolvedEntry = (Array.isArray(entry) ? entry : [entry])
