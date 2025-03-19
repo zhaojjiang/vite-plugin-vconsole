@@ -29,15 +29,6 @@ export default function vitePluginVconsole(options?: PluginOptions): Plugin {
     async configResolved(resolvedConfig: ResolvedConfig) {
       config = resolvedConfig;
 
-      if (
-        !(await import(path.resolve(config.root, "package.json")))?.dependencies
-          ?.vconsole
-      ) {
-        throw new Error(
-          "[vite-plugin-vconsole] need vconsole to be installed."
-        );
-      }
-
       resolvedEntry = (Array.isArray(entry) ? entry : [entry])
         .map((_) => path.resolve(config.root, _))
         .map((_) => _.replace(/\\/g, "/"));
