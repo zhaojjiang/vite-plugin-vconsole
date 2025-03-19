@@ -1,6 +1,6 @@
 {
   "name": "@zhaojjiang/vite-plugin-vconsole",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A Vite plugin to inject vconsole into your project during build.",
   "keywords": [
     "vite",
